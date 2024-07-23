@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script defer src="./js/main.js"></script>
+    <title>FIT MEDITION</title>
+</head>
+
+<body>
+    <!--Header comienzo-->
+    <header>
+        <!--DIBUJO CALCULADORA COMIENZO-->
+        <div class="contenedor-logo">
+            <div class="pantalla">
+                <p class="parrafo-calculadora">
+                    Power = 💪
+                </p>
+            </div>
+            <div class="contenedor-bones-calculadora">
+                <div class="bontones">
+
+                </div>
+                <div class="bontones">
+
+                </div>
+                <div class="bontones">
+
+                </div>
+                <div class="bontones">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="contenedo-nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./pages/fichas.html">
+                            Fichas guardadas
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--DIBUJO CALCULADORA FINAL-->
+
+        <!--TITULO PRINCIPAL COMIENZO-->
+        <div class="titulo">
+            <h1>
+                FIT MEDITION
+            </h1>
+        </div>
+        <!--TITULO PRINCIPAL FINAL-->
+
+    </header>
+    <!--Header final-->
+
+    <!--Main comienzo-->
+    <main>
+        <div class="Instrucciones-uso">
+            <h2>
+                Instucciones de uso de la calculadora
+            </h2>
+            <p>
+                1-Para que la calculadora fucione correctamente llene todos los campos.
+                <br>
+                2-Todo se calcula con el boton negro que se encuentra por encima de guardar.
+                <br>
+                3-Todas las fichas que guardes se almacenan en fichas guardadas.
+                <br>
+                4-Se puede almazenar mucha cantidad de fichas pero al refrescar el INICIO.
+                <br>
+                y volver a calcular las fichas guardadas se van a borrar por que tiene un.
+                <br>
+                solo botton que activa todo.
+                <br>
+                5-Para recalcular es mejor rellenar los campos nuevamente.
+            </p>
+        </div>
+        <div class="container-calculador-completa">
+            <h2 class="titulo-calculadora">
+                Completa la Ficha
+            </h2>
+            <div class="container-nombre-completo">
+                <label class="label-nombre" for="name">
+                    <h3>
+                        Nombre completo
+                    </h3>
+                    <input type="text" id="nombre-completo">
+                </label>
+
+            </div>
+            <!--COMIENZO DE CALCULADORA IMC-->
+            <div class="container-calculadora-imc">
+                <label for="">
+                    <h2>
+                        Calcular IMC
+                    </h2>
+                </label>
+
+                <label for="">
+                    <h3>
+                        ¿Cuanto pesas?
+                    </h3>
+                    <p class="warig">
+                        CUIDADO:LLENAR ESTE CAMPO 
+                    </p>
+                </label>
+                <input class="peso-input" type="text" id="peso">
+
+                <label for="">
+                    <h3>
+                        ¿Cuanto mides?
+                    </h3>
+                    <p>
+                        Especifique medida con punto
+                        <br>
+                        EJ: 1.80
+                    </p>
+                </label>
+                <input class="altura-input" type="text" id="altura">
+
+                <label for="">
+                    <h3>
+                        Resultado
+                    </h3>
+                </label>
+                <input class="resultado-input" type="text" disabled id="resultado">
+                <input class="resultado-input" type="text" disabled id="resultado-estadodesalud">
+
+
+            </div>
+            <!--FINAL DE CALCULADORA IMC-->
+
+            <!--COMIENZO DE TASA METABOLICA BASAL-->
+            <div class="container-tasa-metabolica">
+                <h2>
+                    Tasa metavolica basal
+                </h2>
+                <input type="text" disabled id="resultado-tasa">
+                <label for="">
+                    <h2>
+                        ¿Como definirias tu actividad diaria?
+                    </h2>
+
+                    <select name="" id="actividad">
+                        <option value="">
+                            Seleccione
+                        </option>
+                        <option value="1">
+                            1 Sedentario 😪
+                        </option>
+                        <option value="2">
+                            2 Leve 😀
+                        </option>
+                        <option value="3">
+                            3 Media 😠
+                        </option>
+                        <option value="4">
+                            4 Fuerte 😡
+                        </option>
+                        <option value="5">
+                            5 Muy fuerte 💀
+                        </option>
+                    </select>
+                </label>
+
+            </div>
+            <!--FINAL DE TASA METABOLICA BASAL-->
+
+            <!--INICIO DE CALCULADORA PROTEINAS-->
+            <div class="container-calculador-proteinas">
+                <label for="">
+                    <h2>
+                        Calcular proteinas diarias
+                    </h2>
+
+                    <select name="" id="seleccionar-sexo">
+                        <option value="">
+                            Seleccione
+                        </option>
+                        <option value="mujer">
+                            Mujer 👩‍💼
+                        </option>
+                        <option value="hombre">
+                            Hombre 👨‍💼
+                        </option>
+
+                    </select>
+                </label>
+                <input class="input-proteinas" type="text" disabled id="resultado-proteinas">
+                <button class="boton" id="boton">
+                    Calcular
+                </button>
+            </div>
+            <!--FINAL DE CALCULADORA PROTEINAS-->
+
+            <!--COMIENZO GUARDAR-->
+            <div class="container-guardado">
+                <label for="guardar">
+                    <button class="bonton-guardado" id="boton-guardar">
+                        Guardar ficha
+                    </button>
+                </label>
+            </div>
+        </div>
+        <!--COMIENZO GUARDAR -->
+
+        <!--COMIENZO FICHAS GUARDADAS-->
+         <h2 class="titulo-verificar">
+            Verificar fichas
+         </h2>
+        <div class="" id="container-fichas-guardadas">
+
+        </div>
+        <div class="fichas-guardadas-contenedor" id="contenedor-generador">
+           
+        </div>
+       <div class="contenedor-invicible">
+         <div class="contenedor-flechas">
+                <div class="flecha-izquierda" id="ir-izquierda">
+                    <h2>
+                        ◀
+                    </h2>
+                </div>
+                <div class="flecha-derecha" id="ir-derecha">
+                    <h2>
+                        ▶
+                    </h2>
+                </div>
+            </div>
+       </div>
+
+
+    </main>
+    <!--Main final-->
+
+    <!--Inicio del footer-->
+    <footer>
+
+        <div class="content-derechos">
+            <p class="derechos">
+                Todos los derechos resevados a fit medition
+            </p>
+        </div>
+        <div class="container-emojis">
+            <h2>
+                💪
+            </h2>
+
+            <h2>
+                🏋️‍♂️
+            </h2>
+
+            <h2>
+                🧘‍♂️
+            </h2>
+        </div>
+    </footer>
+    <!--Final del footer-->
+
+
+</body>
+
+</html>

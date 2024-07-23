@@ -1,0 +1,26 @@
+.main-fichas {
+    width: 100%;
+    overflow: scroll;
+
+    .container-datos-guardados {
+        display: flex;
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+        gap: 10%;
+    
+        .stilorecuperador {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+            border-radius: 20px;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(90deg,rgba(255, 0, 0, 0.336),green,rgba(0, 0, 255, 0.274));
+        }
+        
+    }
+}

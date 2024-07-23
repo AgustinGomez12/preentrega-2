@@ -1,0 +1,240 @@
+main {
+    background: linear-gradient(90deg, rgb(98, 18, 18), rgb(24, 10, 10));
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*COMIENZO DE LOS ESTILOS DE TODA LA CALCULADORA*/
+    .container-calculador-completa {
+        width: 700px;
+        height: 100%;
+        background: linear-gradient(90deg, blue, violet);
+        border-radius: 20px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+
+        .titulo-calculadora {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+
+        }
+
+        .resultado {
+            background-color: aqua;
+        }
+
+        .container-nombre-completo {
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+
+            label {
+                display: flex;
+                align-items: center;
+                margin-top: 2%;
+            }
+        }
+
+        .container-calculadora-imc {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: solid;
+            border-radius: 10px;
+            padding: 5%;
+            margin-top: 5%;
+
+            label {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .warig {
+                color: red;
+            }
+
+            .resultado-input {
+                border-radius: 10px;
+                margin: 10px 0 0 0px;
+                background-color: aliceblue;
+
+            }
+
+
+        }
+
+
+    }
+
+    /*FINAL DE LOS ESTILOS DE TODA LA CALCULADORA*/
+
+    //COMIENZO DE TODOS LOS ESTILOS DE TASA METABOLICA BASAL*/
+    .container-tasa-metabolica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid;
+        border-radius: 10px;
+        padding: 5%;
+        margin-top: 5%;
+
+        input {
+            margin: 10px;
+            background-color: aliceblue;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    /*FINAL DE TODOS LOS ESTILOS DE TASA METABOLICA BASAL*/
+
+    //COMIENZO DE ESTILOS DE CALCULADORA PROTEINAS*/
+    .container-calculador-proteinas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid;
+        border-radius: 10px;
+        padding: 5%;
+        margin-top: 5%;
+
+        .input-proteinas {
+            background-color: aliceblue;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    /*FINAL DE ESTILOS DE CALCULADORA PROTEINAS*/
+ 
+    /*BOTON DE GUARDAR*/
+    .container-guardado {
+        display: flex;
+        justify-content: center;
+
+        .bonton-guardado {
+            background: linear-gradient(90deg, rgba(0, 0, 255, 0.493), rgba(255, 0, 0, 0.514))
+        }
+    }
+    /*BOTON DE GUARDAR FINAL*/
+
+    /*COMIENZO DE ESTILOS DE CONTENEDOR VERIFICAR FICHAS*/  
+    .fichas-guardadas-contenedor {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        scrollbar-width: none;
+        margin-top: 3%;
+        position: relative;
+
+
+
+        .contenedor-de-fichas {
+            display: flex;
+            width: 400px;
+            overflow-wrap: break-word;
+            margin: 5%;
+        }
+
+        .tarjetas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            background: linear-gradient(90deg, rgb(92, 48, 48), rgb(147, 147, 214), rgb(194, 193, 193));
+            width: 400px;
+            border-radius: 10px;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                color: black;
+                font-size: 23px;
+            }
+        }
+
+
+    }
+    /*COMIENZO DE ESTILOS DE CONTENEDOR VERIFICAR FICHAS*/ 
+
+    /*CONTENEDOR INVICIBLE*/
+    .contenedor-invicible {
+        display: flex;
+    }
+     /*CONTENEDOR INVICIBLE FINAL*/
+
+    /*FLECHAS PARA MANEJAR CARRUSEL*/
+    .contenedor-flechas {
+        display: flex;
+        gap: 100px;
+        width: 100%;
+        position: relative;
+        top: 0;
+        bottom: -140vh;
+        padding-left: 35vh;
+        padding-right: 35vh;
+        margin-top: 20px;
+
+        .flecha-derecha {
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            background-color: black;
+        }
+
+        .flecha-izquierda {
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            background-color: black;
+        }
+    }
+    /*FLECHAS PARA MANEJAR CARRUSEL*/
+    
+    /*TITULO SUELTO*/
+    .titulo-verificar {
+        margin-top: 5%;
+    }
+    /*TITULO SUELTO*/
+
+
+    .Instrucciones-uso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+
+        h2 {
+            color: blue;
+        }
+
+        
+    }
+}
