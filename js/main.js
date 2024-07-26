@@ -4,7 +4,7 @@ let nombreCompleto = document.getElementById("nombre-completo")
 //Variable de nombre ⬆⬆
 
 //Variable de calcular ⬇⬇
-let calcular = document.getElementById("boton")
+const calcular = document.getElementById("boton")
 //Variable de calcular ⬆⬆
 
 //Variable de peso ⬇⬇
@@ -15,9 +15,6 @@ let peso = document.getElementById("peso")
 const almacenDefichas = []
 //Array donde se almacenan las fichas⬆⬆
 
-//Array de nombres ⬇⬇
-const nombres = []
-//Array de nombres ⬆⬆
 
 //INCIO DE CALCULADORA COMPLETA
 calcular.onclick = (altura, peso) => {
@@ -88,19 +85,19 @@ calcular.onclick = (altura, peso) => {
 
     switch (actividadXDia) {
         case "1":
-            resultadoBasal.value = Math.round(numeroDeActividadXDia[0]) * pesoXParametroBenedic + " KALORIAS X DIA"
+            resultadoBasal.value = Math.round(numeroDeActividadXDia[0]) * pesoXParametroBenedic + " CALORIAS X DIA"
             break;
         case "2":
-            resultadoBasal.value = Math.round(numeroDeActividadXDia[1]) * pesoXParametroBenedic + " KALORIAS X DIA"
+            resultadoBasal.value = Math.round(numeroDeActividadXDia[1]) * pesoXParametroBenedic + " CALORIAS X DIA"
             break;
         case "3":
-            resultadoBasal.value = Math.round(numeroDeActividadXDia[2]) * pesoXParametroBenedic + " KALORIAS X DIA"
+            resultadoBasal.value = Math.round(numeroDeActividadXDia[2]) * pesoXParametroBenedic + " CALORIAS X DIA"
             break;
         case "4":
-            resultadoBasal.value = Math.round(numeroDeActividadXDia[3]) * pesoXParametroBenedic + " KALORIAS X DIA"
+            resultadoBasal.value = Math.round(numeroDeActividadXDia[3]) * pesoXParametroBenedic + " CALORIAS X DIA"
             break;
         case "5":
-            resultadoBasal.value = Math.round(numeroDeActividadXDia[4]) * pesoXParametroBenedic + " KALORIAS X DIA"
+            resultadoBasal.value = Math.round(numeroDeActividadXDia[4]) * pesoXParametroBenedic + " CALORIAS X DIA"
             break;
         default:
             resultadoBasal.value = "Especifique seleccion"
@@ -115,7 +112,7 @@ calcular.onclick = (altura, peso) => {
             resultadoProteina.value = peso * 0.85 + " DE PROTEINA X DIA"
             break;
         case "hombre":
-            resultadoProteina.value = peso * 1.25
+            resultadoProteina.value = peso * 1.25 + " DE PROTEINA X DIA"
             break;
         default:
             resultadoProteina.value = "Especifique seleccion"
@@ -143,7 +140,7 @@ calcular.onclick = (altura, peso) => {
 
 
     //GUARDAR FICHAS
-    let guardarFicha = document.getElementById("boton-guardar")
+    const guardarFicha = document.getElementById("boton-guardar")
     let fichasCarrusel = document.getElementById("contenedor-generador")
 
     guardarFicha.onclick = () => {
@@ -159,13 +156,14 @@ calcular.onclick = (altura, peso) => {
                 `<h2>Sus proteinas diarias son:${ficha.proteina}</h2>`
             fichasCarrusel.appendChild(containerFichas)
             containerFichas.appendChild(containerScroll)
-            localStorage.setItem("fichasAlmacenadas", JSON.stringify(almacenDefichas))
+
         })
 
-
+        localStorage.setItem("fichasAlmacenadas", JSON.stringify(almacenDefichas))
 
 
     }
+
     //GUARDAR FICHAS FINAL
 
     //FLECHAS PARA MOVER CARRUSEL
